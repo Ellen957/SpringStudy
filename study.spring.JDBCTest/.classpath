@@ -11,6 +11,6 @@
 			<attribute name="owner.project.facets" value="me.spring"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="I:/web/HotelServ/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.40-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator.PC-20160623PUQE/Desktop/mysql-connector-java-5.1.40-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

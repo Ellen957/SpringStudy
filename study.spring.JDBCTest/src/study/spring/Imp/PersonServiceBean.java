@@ -51,6 +51,7 @@ public class PersonServiceBean implements PersonService{
 	@Override
 	public Person getPerson(Integer ID) {
 		// TODO Auto-generated method stub
+		System.out.println("执行查询功能");
 		return (Person)jdbcTemplate.queryForObject("select * from person where ID = ?",new Object[]{ID},new int[]{java.sql.Types.INTEGER},new PersonRowMapper());
 	}
 
@@ -63,7 +64,7 @@ public class PersonServiceBean implements PersonService{
 		jdbcTemplate.update("delete person where ID=?",new Object[]{ID},new int[]{java.sql.Types.INTEGER});
 	}
 
-	/* (non-Javadoc)
+	/* (non-Javadoc) 
 	 * @see study.spring.service.PersonService#getPersons()
 	 */
 	@Override

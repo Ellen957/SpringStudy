@@ -17,7 +17,10 @@ public class Test {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("Bean.xml");
 		PersonService person = (PersonService)ctx.getBean("personService");
 //		person.save(new Person(123321,"dd"));
-		Person p = person.getPerson(123321);
-		System.out.println(p.getName());
+//		Person p = person.getPerson(123456);
+//		System.out.println(p.getName());
+		Person p = new Person();
+		p = person.getPerson(2);
+		
 	}
 }
