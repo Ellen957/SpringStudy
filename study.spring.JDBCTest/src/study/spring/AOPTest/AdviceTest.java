@@ -28,7 +28,7 @@ public class AdviceTest {
 	
 	@After("anyMethod()")
 	public void after(){
-		System.out.println("这是后置通知，在方法执行后执行");
+		System.out.println("这是后置通4知，在方法执行后执行");
 	}
 	
 	@AfterThrowing("anyMethod()")
